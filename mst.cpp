@@ -9,7 +9,7 @@
 using namespace std;
 
 double MST::approxDist(const MSTNode & one, const MSTNode & two){
-	
+
 	double X1 = one.X;
 	double X2 = two.X;
 	double Y1 = one.Y;
@@ -17,7 +17,7 @@ double MST::approxDist(const MSTNode & one, const MSTNode & two){
 
 	double xSquared1 = (X1 - X2)*(X1 - X2);
 	double ySquared1 = (Y1 - Y2)*(Y1 - Y2);
-	
+
 	return xSquared1 + ySquared1;
 }
 
@@ -66,7 +66,7 @@ void MST::primsMST() {
 				minIndex = (int)i;
 			}
 		}
-		//If minIndex == -1, there were no reachable nodes to add with a non empty 
+		//If minIndex == -1, there were no reachable nodes to add with a non empty
 		//Outties vector
 		if (minIndex == -1) {
 			cerr << "There are unreachable nodes\n";
@@ -107,7 +107,7 @@ void MST::primsMST() {
 				}//if
 			}//for
 		}//else if
-		 //Else it must be a wild node, update distances for only wild and 
+		 //Else it must be a wild node, update distances for only wild and
 		else {
 			for (size_t i = 0; i < Outties.size(); i++) {
 				if (Outties[i].X <= 0 && Outties[i].Y <= 0) {
@@ -125,7 +125,7 @@ void MST::primsMST() {
 }
 
 void MST::PrintMST(){
-	
+
 	double totalDistance = 0.0;
 
 	for (size_t i = 0; i < Innies.size(); i++) {
@@ -147,7 +147,7 @@ void MST::PrintMST(){
 void MST::addNode(int index, int X, int Y){
 
 	MSTNode temp;
-	
+
 	temp.X = X;
 	temp.Y = Y;
 	temp.index = index;

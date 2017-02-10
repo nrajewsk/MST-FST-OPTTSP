@@ -12,8 +12,7 @@ using namespace std;
 char ReadInCommands(int argc, char* argv[]);
 
 int main(int argc, char* argv[]) {
-	
-	ios_base::sync_with_stdio(false);
+
 	cout << setprecision(2);
 	cout << fixed;
 

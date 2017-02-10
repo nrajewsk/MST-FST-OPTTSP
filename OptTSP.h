@@ -15,8 +15,8 @@ class optTSP {
 
 private:
 	struct Node {
-		
-		int X; 
+
+		int X;
 		int Y;
 		double Distance = numeric_limits<double>::infinity();
 		int index;

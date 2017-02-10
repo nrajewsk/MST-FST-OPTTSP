@@ -19,11 +19,11 @@ private:
 		int X;
 		int Y;
 	};
-	
+
 	/*
 	*Requires: Two nodes with valid coordinates
 	*Modifies: Nothing.
-	*Effects:  Returns a comparable representation of 
+	*Effects:  Returns a comparable representation of
 	*		   distance between two nodes.
 	*/
 	double approxDist(const MSTNode &one, const MSTNode &two);
@@ -47,7 +47,7 @@ public:
 	/*
 	*Requires: A valid X and Y coordinate
 	*Modifies: Nothing public.
-	*Effects:  Adds a node that can subsequently used when 
+	*Effects:  Adds a node that can subsequently used when
 	*		   computing the MST.
 	*/
 	void addNode(int index, int X, int Y);
